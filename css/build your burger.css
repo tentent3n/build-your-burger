@@ -1,0 +1,100 @@
+body {
+    background-color: #fff6ed;
+}
+.layer{
+    margin-bottom: -100px;
+}
+
+/* Restrict burger layout width */
+.burger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Adjust this as needed */
+    margin: 0 auto;
+}
+
+/* Keep burger layers neat */
+.burger-container img {
+    height: 200px;
+    margin: 30px 0;      /* Stack tighter */
+    display: inline-block;
+}
+
+/* Button Styles */
+.control-button {
+    font-family: Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+    color: white; /* Make sure text color is always white */
+}
+
+/* Button hover effects */
+.control-button:hover {
+    opacity: 0.8;
+}
+
+/* Specific button colors */
+.control-button.send {
+    background-color: #f28a1f; /* Default color for Send */
+}
+
+.control-button.send:hover {
+    background-color: #cf6f0e; /* Darker shade on hover */
+}
+
+.control-button.delete {
+    background-color: #e74c3c; /* Red color for Delete */
+}
+
+.control-button.delete:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.control-button.erase {
+    background-color: #000; /* Black color for Erase */
+}
+
+.control-button.erase:hover {
+    background-color: #333; /* Darker black on hover */
+}
+
+.control-button.redo {
+    background-color: #157e45; /* Yellow color for Redo */
+}
+
+.control-button.redo:hover {
+    background-color: #157e45; /* Darker yellow on hover */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;   /* Align buttons horizontally */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Add some space between buttons */
+    margin-top: 80px;
+}
+
+/* Button order */
+.control-button:nth-child(1) {
+    order: 4; 
+}
+
+.control-button:nth-child(2) {
+    order: 1;  
+}
+
+.control-button:nth-child(3) {
+    order: 2; 
+}
+
+.control-button:nth-child(4) {
+    order: 3; 
+}

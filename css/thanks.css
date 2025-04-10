@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #fff6ed;
+    color: #e07e1c;
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+    height: 100vh;  /* Asegura que ocupe toda la altura de la ventana */
+    text-align: center;  /* Asegura que el texto esté centrado */
+    }
+    
+    /* Contenedor principal */
+    .container {
+    display: flex;
+    justify-content: center;  /* Centra los elementos dentro del contenedor */
+    align-items: center;  /* Centra verticalmente los elementos dentro del contenedor */
+    flex-direction: column;  /* Asegura que los elementos se apilen verticalmente */
+    text-align: center;  /* Centra el contenido dentro del contenedor */
+    box-sizing: border-box;
+    }
+    
+    /* Sección de texto */
+    .text-section {
+    width: 80%;  /* Ajusta el tamaño para que no se vea demasiado grande en pantallas pequeñas */
+    margin-bottom: 20px;
+    }
+    
+    /* Título */
+    .text-section h1 {
+    font-family: Arial, sans-serif;
+    font-size: 6rem;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    color: #f28a1f;
+    text-transform: uppercase;
+    }
+    
+    /* Botón */
+    button {
+    font-family: Verdana, sans-serif;
+    margin-top: 20px;
+    background-color: #f28a1f;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    }
+    
+    button:hover {
+    background-color: #cf6f0e;
+    }

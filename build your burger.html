@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RFID Burger Builder</title>
+    <link rel="stylesheet" href="css/build your burger.css" />
+    <script src="js/simple-web-serial.min.js"></script>
+</head>
+<body>
+    <pre id="log"></pre>
+
+    <div class="burger-container">
+        <div class="layer bun-top"><img src="images/topbun.png" alt="Top Bun"></div>
+        <div id="layers"></div>
+        <div class="layer bun-bottom"><img src="images/bottombun.png" alt="Bottom Bun"></div>
+    </div>
+
+    <div class="button-container">
+        <button class="control-button send" onclick="window.location.href='thanks.html'">SEND</button>
+        <button class="control-button erase" onclick="eraseLayer()">Erase</button>
+        <button class="control-button redo" onclick="redoLayer()">Redo</button>
+        <button class="control-button delete" onclick="deleteAllLayers()">Delete</button>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
+
